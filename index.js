@@ -12,8 +12,6 @@ const maputil = require('maputil');
 const path = require('path');
 const URL = require('url').URL;
 
-throw new Error('Do not run this script again. All of the files were removed from the wordpress server. Running this script will overwrite existing files with junk.');
-
 async function writeFileAsync(file, data, options) {
   return new Promise((resolve, reject) => {
     writeFile(file, data, options, ex => ex ? reject(ex) : resolve());
