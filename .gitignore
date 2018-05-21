@@ -5,3 +5,6 @@
 
 # Common build output directory
 build/
+
+node_modules
+package-lock.json
