@@ -40,9 +40,6 @@ function buildMemoizedDownloadToFile() {
   const requestedUris = new Map();
   const usedFiles = new Set();
   return function(uri) {
-    // Some parts of the site use http: and others https:, so
-    // normalize to avoid errors.
-    uri = uri.replace(/^http:/, 'https:');
     return maputil.getOrSet(requestedUris, uri, async () => {
       const file = (function () {
         const sourceFile = uriGetFile(uri);
