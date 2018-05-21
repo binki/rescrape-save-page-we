@@ -1,0 +1,18 @@
+{
+  "name": "rescrape-save-page-we",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-lock": "0.0.3",
+    "jsdom": "^11.10.0",
+    "maputil": "^1.0.0",
+    "node-fetch": "^2.1.2"
+  }
+}
